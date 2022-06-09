@@ -12,11 +12,27 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BhuTuka+Expanded+One&family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
         <style>
             * {
+                font-family: Montserrat;
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+            }
+            button,
+            input {
+                box-shadow: 0 3px 20px rgba(0, 0, 0, 0.295);
+                border: none;
+            }
+            #buttons > div {
+                padding: 0;
+                margin: 0;
             }
         </style>
     </head>
@@ -27,30 +43,36 @@
                 <input
                     id="counter"
                     type="text"
-                    class="w-25 rounded text-center bg-light fw-bold py-2 fs-4 border-primary shadow p-3"
+                    class="w-25 rounded text-center bg-light fw-bold fs-4 py-2"
                 />
                 <div
-                    class="mx-auto mt-3 row w-25 text-center justify-content-center"
+                    id="buttons"
+                    class="d-flex mx-auto mt-3 row w-25 text-center justify-content-center"
                 >
-                    <button
-                        class="bg-warning border-primary rounded-3 shadow p-2 fw-bold m-1 col-5"
-                        id="decrease"
-                    >
-                        Azalt
-                    </button>
-                    <button
-                        class="bg-warning border-primary rounded-3 shadow p-2 fw-bold m-1 col-5"
-                        id="increase"
-                    >
-                        Arttır
-                    </button>
-                    <br />
-                    <button
-                        class="bg-warning border-primary rounded-3 shadow p-2 fw-bold m-1 col-11"
-                        id="reset"
-                    >
-                        Sıfırla
-                    </button>
+                    <div class="col-6 p-1">
+                        <button
+                            class="bg-warning rounded-3 fw-bold py-2 col-12"
+                            id="decrease"
+                        >
+                            Azalt
+                        </button>
+                    </div>
+                    <div class="col-6 p-1">
+                        <button
+                            class="bg-warning rounded-3 fw-bold py-2 col-12"
+                            id="increase"
+                        >
+                            Arttır
+                        </button>
+                    </div>
+                    <div class="col-12 p-1">
+                        <button
+                            class="bg-warning rounded-3 fw-bold py-2 col-12"
+                            id="reset"
+                        >
+                            Sıfırla
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
