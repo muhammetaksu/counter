@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css"
+            integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container d-flex justify-content-center">
+            <div class="text-center w-100" style="margin-top: 15vh">
+                <label for="counter"></label>
+                <input
+                    id="counter"
+                    type="text"
+                    class="w-25 rounded text-center bg-light fw-bold py-2 fs-4 border-primary shadow p-3"
+                />
+                <div
+                    class="mx-auto mt-3 row w-25 text-center justify-content-center"
+                >
+                    <button
+                        class="bg-warning border-primary rounded-3 shadow p-2 fw-bold m-1 col-5"
+                        id="decrease"
+                    >
+                        Azalt
+                    </button>
+                    <button
+                        class="bg-warning border-primary rounded-3 shadow p-2 fw-bold m-1 col-5"
+                        id="increase"
+                    >
+                        Arttır
+                    </button>
+                    <br />
+                    <button
+                        class="bg-warning border-primary rounded-3 shadow p-2 fw-bold m-1 col-11"
+                        id="reset"
+                    >
+                        Sıfırla
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
